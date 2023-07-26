@@ -11,6 +11,8 @@
     <!-- FavIcon  -->
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Icon  -->
+    <script src="https://kit.fontawesome.com/b852a5099d.js" crossorigin="anonymous"></script>
     <!-- Google Font  -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
@@ -19,12 +21,64 @@
             font-family: 'Lato', sans-serif;
         }
     </style>
-
 </head>
 <body>
-    <h1  class="font-lato font-bold">hello</h1>
-    <p class="text-5xl font-extrabold font-lato">Tailwind CSS works by scanning all of your HTML files, JavaScript components, and any other templates for class names, generating the corresponding styles and then writing them to a static CSS file.</p>
-    <p>hello</p>
+    <header>
+        <nav class="max-w-7xl bg-white lg:bg-red-400 rounded-3xl px-8 py-4 mx-auto lg:mt-10">
+            <div class="container mx-auto flex items-center justify-between  invisible lg:visible">
+              <!-- Left Links -->
+              <ul class="flex space-x-4 md:space-x-8">
+                <li><a href="#" class="text-white font-medium">Home</a></li>
+                <li><a href="#" class="text-white font-medium">About Us</a></li>
+                <li><a href="#" class="text-white font-medium">Shop</a></li>
+                <li><a href="#" class="text-white font-medium">All Fruits</a></li>
+              </ul>
+        
+              <!-- Logo (Visible in Desktop) -->
+              <div class="flex items-center gap-4">
+                <img src="./images/logo.png" alt="">
+                <a href="#" class="text-white font-bold text-4xl">Fruit Burst</a>
+              </div>
+        
+              <!-- Search Bar (Visible in Desktop) -->
+              <div class="hidden md:block bg-white rounded-3xl">
+                <input type="text" placeholder="Search here" class="px-2 py-1 rounded-md" />
+                <button class="bg-white text-blue-500 px-3 py-1 rounded-md ml-2"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </div>
+            </div>
+        
+            <!-- wbciwubcuhiwdbcjwbdcij -->
+        
+            <div class="navbar flex justify-between -mt-16 lg:hidden">
+              <div class="navbar-center">
+                  <div class="flex items-center gap-4">
+                      <img src="./images/logo.png" alt="">
+                      <a href="#" class="text-[#121212] text-xl font-bold">Fruit Burst</a>
+                  </div>
+              </div>
+              <div class="navbar-end">
+                <div class="dropdown dropdown-bottom dropdown-left">
+                  <label tabindex="0" class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                  </label>
+                  <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[20] p-2 shadow bg-white rounded-box w-52">
+                      <li><a>Home</a></li>
+                      <li><a>About Us</a></li>
+                      <li><a>Shop</a></li>
+                      <li><a>All Fruit</a></li>
+                      <li>
+                          <div class="bg-red-50 w-48 pr-4">
+                              <input type="text" placeholder="Search here" class="rounded-md" />
+                              <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                         </div>
+                      </li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+            
+          </nav>
+    </header>
     
 </body>
 </html>
